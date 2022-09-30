@@ -80,7 +80,7 @@ const texts = {
       home: {
         pageTitle: 'BailaRico - Tanzschule für Salsa in Zürich',
         pageDescription:
-          'Lerne Salsa tanzen in Zürich. BailaRico bietet Tanzkurse für Salsa On1, Salsa On2, Ladies Style, Urban, High Heels und Bachata an.',
+          'Lerne Salsa tanzen in Zürich. Tanzschule BailaRico bietet Tanzkurse für Salsa On1, Salsa On2 (Mambo), Cha Cha Cha, Ladies Style, Urban, High Heels und Bachata an.',
       },
       error: {
         pageTitle: 'Seite nicht gefunden - Bailarico',
@@ -311,7 +311,7 @@ const texts = {
       home: {
         pageTitle: 'BailaRico - Salsa Dance School in Zurich',
         pageDescription:
-          'Learn to dance Salsa in Zurich. BailaRico offers dance classes for Salsa On1, Salsa On2, Ladies Style, Urban, High Heels and Bachata.',
+          'Learn to dance Salsa in Zurich. BailaRico is a dance school offering dance classes for Salsa On1, Salsa On2 (Mambo), Cha Cha Cha, Ladies Style, Urban, High Heels and Bachata.',
       },
       error: {
         pageTitle: 'Page Not Found - Bailarico',
@@ -370,7 +370,7 @@ const texts = {
         title: 'Sign Up',
         text: [
           //
-          `Sign up for our classes by writing to us a message.`,
+          `Sign up for our classes by writing us a message.`,
         ],
       },
       // Pricing
