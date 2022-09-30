@@ -7,18 +7,18 @@ const texts = {
 
   images: {
     // socialShare: 'https://bailarico.ch/social.png',
-    // socialShare: 'https://ruizdurazo.github.io/nextjs-ghpages/social.png', // for testing
+    // socialShare: 'https://bailarico-ch.github.io/bailarico.ch/social.png', // for testing
     socialShare: 'social.png', // for testing
     // socialShare: '',
 
     // Home page hero
     hero: {
       // Video - 1440x720px - recomendacion: no mayor a 30-40MB
-      // video: 'nextjs-ghpages/hero.mp4', // for testing
+      // video: 'bailarico.ch/hero.mp4', // for testing
       video: 'hero.mp4',
 
       // Preview del video - 1440x720px
-      // preview: 'nextjs-ghpages/hero_preview.jpg', // for testing
+      // preview: 'bailarico.ch/hero_preview.jpg', // for testing
       preview: 'hero_preview.jpg',
     },
 
@@ -131,7 +131,7 @@ const texts = {
         title: 'Aktueller Kursplan',
         // description: 'inkl. Kursbeschreibungen und weitere Details.',
         button: 'PDF herunterladen',
-        file: 'nextjs-ghpages/2022-10-Kursplan-BailaRico.pdf', // PDF file
+        file: 'bailarico.ch/2022-10-Kursplan-BailaRico.pdf', // PDF file
         // file: '2022-10-Kursplan-BailaRico.pdf', // PDF file
       },
       // Registration
@@ -362,7 +362,7 @@ const texts = {
         title: 'Current Schedule',
         // description: 'including class descriptions and other details.',
         button: 'Download PDF',
-        file: 'nextjs-ghpages/2022-10-Schedule-BailaRico.pdf', // PDF file
+        file: 'bailarico.ch/2022-10-Schedule-BailaRico.pdf', // PDF file
         // file: '2022-10-Schedule-BailaRico.pdf', // PDF file
       },
       // Registration

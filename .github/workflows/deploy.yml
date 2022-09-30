@@ -32,11 +32,11 @@ jobs:
       - name: Build app
         run: yarn build
         env:
-          NEXT_PUBLIC_BASE_PATH: /nextjs-ghpages
+          NEXT_PUBLIC_BASE_PATH: /bailarico.ch
       - name: Export app
         run: yarn export
         env:
-          NEXT_PUBLIC_BASE_PATH: /nextjs-ghpages
+          NEXT_PUBLIC_BASE_PATH: /bailarico.ch
       - run: touch ./out/.nojekyll
 
       - name: Deploy
