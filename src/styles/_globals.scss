@@ -1,0 +1,74 @@
+@import '@/styles/variables';
+@import '@/styles/Shared.module';
+
+/* Intuitive sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove all margins and padding */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Make percentage heights work */
+html,
+body {
+  height: 100%;
+}
+
+html,
+body {
+  font-family: $font--main;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  // scroll-behavior: smooth;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#__next {
+  isolation: isolate;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: none;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  border: none;
+}
+
+svg {
+  width: 24px;
+  height: auto;
+}
