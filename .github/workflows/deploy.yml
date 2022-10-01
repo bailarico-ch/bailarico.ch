@@ -32,11 +32,13 @@ jobs:
       - name: Build app
         run: yarn build
         env:
-          NEXT_PUBLIC_BASE_PATH: /bailarico.ch
+          # NEXT_PUBLIC_BASE_PATH: /bailarico.ch
+          NEXT_PUBLIC_BASE_PATH: /
       - name: Export app
         run: yarn export
         env:
-          NEXT_PUBLIC_BASE_PATH: /bailarico.ch
+          # NEXT_PUBLIC_BASE_PATH: /bailarico.ch
+          NEXT_PUBLIC_BASE_PATH: /
       - run: touch ./out/.nojekyll
 
       - name: Deploy
