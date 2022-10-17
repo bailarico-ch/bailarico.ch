@@ -35,11 +35,11 @@ export const Layout = ({ children, refs }: LayoutProps) => {
         <meta key="meta:description" name="description" content={t.meta.home.pageDescription} />
         <meta key="theme-color" name="theme-color" content="#ffffff" />
         {/* 32px */}
-        {/* <link key="icon" rel="icon" type="image/png" href="/favicon.png" /> */}
-        <link key="icon" rel="icon" type="image/png" href="/bailarico.ch/favicon.png" />
+        <link key="icon" rel="icon" type="image/png" href="/favicon.png" />
+        {/* <link key="icon" rel="icon" type="image/png" href="/bailarico.ch/favicon.png" /> */}
         {/* 180px */}
-        {/* <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" /> */}
-        <link rel="apple-touch-icon" href="/bailarico.ch/apple-touch-icon.png" sizes="180x180" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+        {/* <link rel="apple-touch-icon" href="/bailarico.ch/apple-touch-icon.png" sizes="180x180" /> */}
         {/* Open Graph / Facebook */}
         <meta key="og:type" property="og:type" content="website" />
         <meta key="og:url" property="og:url" content="https://bailarico.ch/" />
@@ -52,8 +52,8 @@ export const Layout = ({ children, refs }: LayoutProps) => {
         <meta
           key="og:image"
           property="og:image"
-          // content={`https://bailarico.ch/${t.images.socialShare}`}
-          content={`https://ruizdurazo.github.io/bailarico.ch/${t.images.socialShare}`}
+          content={`https://bailarico.ch/${t.images.socialShare}`}
+          // content={`https://bailarico-ch.github.io/bailarico.ch/${t.images.socialShare}`}
         />
         {/* Twitter */}
         <meta key="twitter:card" property="twitter:card" content="summary_large_image" />
@@ -67,8 +67,8 @@ export const Layout = ({ children, refs }: LayoutProps) => {
         <meta
           key="twitter:image"
           property="twitter:image"
-          // content={`https://bailarico.ch/${t.images.socialShare}`}
-          content={`https://ruizdurazo.github.io/bailarico.ch/${t.images.socialShare}`}
+          content={`https://bailarico.ch/${t.images.socialShare}`}
+          // content={`https://bailarico-ch.github.io/bailarico.ch/${t.images.socialShare}`}
         />
       </Head>
 

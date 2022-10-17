@@ -14,12 +14,12 @@ const texts = {
     // Home page hero
     hero: {
       // Video - 1440x720px - recomendacion: no mayor a 30-40MB
-      video: 'bailarico.ch/hero.mp4', // for testing
-      // video: 'hero.mp4',
+      // video: 'bailarico.ch/hero.mp4', // for testing
+      video: 'hero.mp4',
 
       // Preview del video - 1440x720px
-      preview: 'bailarico.ch/hero_preview.jpg', // for testing
-      // preview: 'hero_preview.jpg',
+      // preview: 'bailarico.ch/hero_preview.jpg', // for testing
+      preview: 'hero_preview.jpg',
     },
 
     // Galeria

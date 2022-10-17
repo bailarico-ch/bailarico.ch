@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import type { NextPage } from 'next'
 import { motion } from 'framer-motion'
 
@@ -32,6 +32,8 @@ const Home: NextPage = () => {
   //
 
   const words = t.hero.title.middle.length > 0 ? t.hero.title.middle : ['Salsa']
+
+  // const [isFail, setIsFail] = useState(false)
 
   //
   // Animations
@@ -77,6 +79,21 @@ const Home: NextPage = () => {
     }, 400)
   }, [])
 
+  // useEffect(() => {
+  //   // videoRef.current.play()
+
+  //   $('body').on('click touchstart', function () {
+  //     const videoElement = document.getElementById('home_video')
+  //     if (videoElement.playing) {
+  //       // video is already playing so do nothing
+  //     } else {
+  //       // video is not playing
+  //       // so play video now
+  //       videoElement.play()
+  //     }
+  //   })
+  // }, [])
+
   //
   // Methods
   //
@@ -89,6 +106,37 @@ const Home: NextPage = () => {
     }
   }
 
+  // const playPauseVideo = () => {
+  //   if (
+  //     videoRef.current.currentTime > 0 &&
+  //     !videoRef.current.paused &&
+  //     videoRef.current.readyState > 2 &&
+  //     isFail === false
+  //   ) {
+  //     videoRef.current.pause()
+  //   } else {
+  //     try {
+  //       videoRef.current.play()
+  //     } catch (error) {
+  //       setIsFail(true)
+  //     }
+  //   }
+  // }
+
+  // const playVideo = () => {
+  //   if (
+  //     !(
+  //       videoRef.current.currentTime > 0 &&
+  //       !videoRef.current.paused &&
+  //       videoRef.current.readyState > 2
+  //     ) ||
+  //     isFail === true
+  //   ) {
+  //     setIsFail(false)
+  //     videoRef.current.play()
+  //   }
+  // }
+
   //
   // Template
   //
@@ -96,7 +144,11 @@ const Home: NextPage = () => {
   return (
     <>
       <Layout refs={[coursesRef, photosRef, contactRef]}>
-        <div className={styles['container']}>
+        <div
+          className={styles['container']}
+          // onTouchStart={() => playVideo()}
+          // onClick={() => playVideo()}
+        >
           <main className={styles['main']}>
             {/* Hero */}
             <div className={`${styles['hero']}`}>
