@@ -131,8 +131,8 @@ const texts = {
         title: 'Aktueller Kursplan',
         // description: 'inkl. Kursbeschreibungen und weitere Details.',
         button: 'PDF herunterladen',
-        file: 'bailarico.ch/2022-10-Kursplan-BailaRico.pdf', // PDF file
-        // file: '2022-10-Kursplan-BailaRico.pdf', // PDF file
+        // file: 'bailarico.ch/2022-10-Kursplan-BailaRico.pdf', // Testing: PDF file
+        file: '2022-10-Kursplan-BailaRico.pdf', // PDF file
       },
       // Registration
       registration: {
@@ -362,8 +362,8 @@ const texts = {
         title: 'Current Schedule',
         // description: 'including class descriptions and other details.',
         button: 'Download PDF',
-        file: 'bailarico.ch/2022-10-Schedule-BailaRico.pdf', // PDF file
-        // file: '2022-10-Schedule-BailaRico.pdf', // PDF file
+        // file: 'bailarico.ch/2022-10-Schedule-BailaRico.pdf', // testing: PDF file
+        file: '2022-10-Schedule-BailaRico.pdf', // PDF file
       },
       // Registration
       registration: {
