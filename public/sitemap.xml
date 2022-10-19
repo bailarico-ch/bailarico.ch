@@ -1,17 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-    <url>
-        <loc>https://bailarico.ch</loc>
-        <lastmod>2022-10-16</lastmod>
-        <xhtml:link rel="alternate" hreflang="en" href="https://bailarico.ch/en" />
-        <xhtml:link rel="alternate" hreflang="de" href="https://bailarico.ch/de" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://bailarico.ch" />
-    </url>
-    <url>
-        <loc>https://bailarico.ch/rechtliches</loc>
-        <lastmod>2022-10-16</lastmod>
-        <xhtml:link rel="alternate" hreflang="en" href="https://bailarico.ch/en/rechtliches" />
-        <xhtml:link rel="alternate" hreflang="de" href="https://bailarico.ch/de/rechtliches" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://bailarico.ch/rechtliches" />
-    </url>
+  <url>
+    <loc>https://bailarico.ch</loc>
+    <link rel="alternate" hreflang="en" href="https://bailarico.ch/en" />
+    <link rel="alternate" hreflang="de" href="https://bailarico.ch/de" />
+    <link rel="alternate" hreflang="x-default" href="https://bailarico.ch" />
+    <lastmod>2022-10-16</lastmod>
+  </url>
+  <url>
+    <loc>https://bailarico.ch/de</loc>
+    <link rel="alternate" hreflang="en" href="https://bailarico.ch/en" />
+    <link rel="alternate" hreflang="de" href="https://bailarico.ch/de" />
+    <link rel="alternate" hreflang="x-default" href="https://bailarico.ch" />
+    <lastmod>2022-10-16</lastmod>
+  </url>
+  <url>
+    <loc>https://bailarico.ch/en</loc>
+    <link rel="alternate" hreflang="en" href="https://bailarico.ch/en" />
+    <link rel="alternate" hreflang="de" href="https://bailarico.ch/de" />
+    <link rel="alternate" hreflang="x-default" href="https://bailarico.ch" />
+    <lastmod>2022-10-16</lastmod>
+  </url>
+  <url>
+    <loc>https://bailarico.ch/rechtliches</loc>
+    <link rel="alternate" hreflang="en" href="https://bailarico.ch/en/rechtliches" />
+    <link rel="alternate" hreflang="de" href="https://bailarico.ch/de/rechtliches" />
+    <link rel="alternate" hreflang="x-default" href="https://bailarico.ch/rechtliches" />
+    <lastmod>2022-10-16</lastmod>
+  </url>
+  <url>
+    <loc>https://bailarico.ch/de/rechtliches</loc>
+    <link rel="alternate" hreflang="en" href="https://bailarico.ch/en/rechtliches" />
+    <link rel="alternate" hreflang="de" href="https://bailarico.ch/de/rechtliches" />
+    <link rel="alternate" hreflang="x-default" href="https://bailarico.ch/rechtliches" />
+    <lastmod>2022-10-16</lastmod>
+  </url>
+  <url>
+    <loc>https://bailarico.ch/en/rechtliches</loc>
+    <link rel="alternate" hreflang="en" href="https://bailarico.ch/en/rechtliches" />
+    <link rel="alternate" hreflang="de" href="https://bailarico.ch/de/rechtliches" />
+    <link rel="alternate" hreflang="x-default" href="https://bailarico.ch/rechtliches" />
+    <lastmod>2022-10-16</lastmod>
+  </url>
 </urlset>
