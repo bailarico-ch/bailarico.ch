@@ -199,6 +199,7 @@ export const SectionPhotos = ({ t }: SectionPhotosProps) => {
           <button
             type="button"
             ref={refButtonBack}
+            aria-label={t.photos.controls.back}
             className={styles['back']}
             onClick={() => {
               paginate(-1)
@@ -214,6 +215,7 @@ export const SectionPhotos = ({ t }: SectionPhotosProps) => {
           <button
             type="button"
             ref={refButtonNext}
+            aria-label={t.photos.controls.next}
             className={styles['next']}
             onClick={() => {
               paginate(1)

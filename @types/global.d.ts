@@ -97,6 +97,10 @@ interface Translation {
   photos: {
     // Title
     title: string
+    controls: {
+      back: string
+      next: string
+    }
   }
   // Team
   team: {

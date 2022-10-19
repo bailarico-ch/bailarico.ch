@@ -162,6 +162,10 @@ const texts = {
     photos: {
       // Title
       title: '*Fotos* & Videos',
+      controls: {
+        back: 'Züruck',
+        next: 'Weiter',
+      },
     },
 
     // Social Media
@@ -388,6 +392,10 @@ const texts = {
     photos: {
       // Title
       title: '*Photos* & Videos',
+      controls: {
+        back: 'Previous',
+        next: 'Next',
+      },
     },
 
     // Social Media
