@@ -119,12 +119,12 @@ const texts = {
       ],
     },
 
-    // Courses
+    // Kurse
     courses: {
       // Title
       title: 'Unsere *Kurse*',
       // Image
-      courses: 'courses-de.png',
+      courses: 'Nov-DE.png',
       // saveCoursesImage: 'Bild speichern',
       // PDF cursos
       pdf: {
@@ -132,7 +132,7 @@ const texts = {
         // description: 'inkl. Kursbeschreibungen und weitere Details.',
         button: 'PDF herunterladen',
         // file: 'bailarico.ch/2022-10-Kursplan-BailaRico.pdf', // Testing: PDF file
-        file: '2022-10-Kursplan-BailaRico.pdf', // PDF file
+        file: 'kursplan-nov-deutsch.pdf', // PDF file
       },
       // Registration
       registration: {
@@ -359,7 +359,7 @@ const texts = {
       // Title
       title: 'Our *Classes*',
       // Image
-      courses: 'courses-en.png',
+      courses: 'Nov-EN.png',
       // saveCoursesImage: 'Save image',
       // PDF cursos
       pdf: {
@@ -367,7 +367,7 @@ const texts = {
         // description: 'including class descriptions and other details.',
         button: 'Download PDF',
         // file: 'bailarico.ch/2022-10-Schedule-BailaRico.pdf', // testing: PDF file
-        file: '2022-10-Schedule-BailaRico.pdf', // PDF file
+        file: 'kursplan-nov-english.pdf', // PDF file
       },
       // Registration
       registration: {
