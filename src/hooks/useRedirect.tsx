@@ -10,23 +10,35 @@ import languageDetector from '../utils/languageDetector'
 const detector = languageDetector as LanguageDetector
 
 export const useRedirect = (to?: string) => {
+  //
+  // Router
+  //
+
   const router = useRouter()
   const path = to || router.asPath
 
-  const [locale, setLocale] = useState('de')
+  //
+  // State
+  //
 
-  // language detection
+  const [locale, setLocale] = useState(i18nConfig.i18n.defaultLocale)
+
+  //
+  // Effects
+  //
+
+  // Language detection and redirects
   useEffect(() => {
     let detectedLng = path === '/' ? 'de' : detector.detect()
-    // path === '/' || !i18nConfig.i18n.locales.includes(router.asPath.slice(1))
-    detectedLng = i18nConfig.i18n.locales.includes(router.asPath.slice(1))
-      ? router.asPath.slice(1)
+
+    // console.log(router.asPath.slice(1))
+    // console.log(router.asPath)
+
+    detectedLng = i18nConfig.i18n.locales.includes(router.asPath.slice(1).split('/')[0])
+      ? router.asPath.slice(1).split('/')[0]
       : detectedLng
 
-    // console.log(router, detectedLng)
-
     if (detectedLng && detectedLng !== locale) {
-      // locale = detectedLng
       setLocale(detectedLng)
 
       //
@@ -39,32 +51,30 @@ export const useRedirect = (to?: string) => {
         router.route.includes('/404')
       ) {
         detector.cache(detectedLng)
+
         router.replace('/' + detectedLng + '/404')
-        // router.push('/' + detectedLng + '/404')
         return
       }
 
       //
-      // /de page
+      // /de page (same as main)
       //
       if (
         //
         detector.cache &&
         !router.route.includes('/404') &&
-        // detectedLng === 'de'
-        // (router.asPath === '/de' || path === `/de`)
         router.asPath === '/de'
       ) {
         setLocale('de')
 
         detector.cache('de')
+
         router.replace('/')
-        // router.push('/')
         return
       }
 
       //
-      // pages
+      // Other pages
       //
       if (
         //
@@ -79,13 +89,13 @@ export const useRedirect = (to?: string) => {
           router.replace(path)
         } else {
           router.replace('/' + detectedLng + path)
-          // router.push('/' + detectedLng + path)
         }
       }
     }
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [router])
+    // }, [router])
+  }, [router, path, locale])
 
   return locale
 }

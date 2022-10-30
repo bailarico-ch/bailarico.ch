@@ -1,6 +1,6 @@
 # Allow all agents
 User-agent: *
-Allow: /
+Disallow:
 
 # Host
 Host: https://bailarico.ch

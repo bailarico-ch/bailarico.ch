@@ -141,6 +141,7 @@ interface Translation {
       streetAndNumber: string
       postcodeAndCity: string
     }
+    labelSocial: string
     // Map
     buttonOpenGoogleMaps: string
     linkGoogleMaps: string
@@ -150,7 +151,7 @@ interface Translation {
     buttonScrollToTop: string
     copyright: string
     madeInDesktop: string
-    madeInMobile: string
+    // madeInMobile: string
     linkToLegal: string
   }
   // Error

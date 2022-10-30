@@ -79,7 +79,7 @@ export const Layout = ({ children, refs }: LayoutProps) => {
       {children}
 
       {/* Footer */}
-      <Footer t={t} />
+      <Footer t={t} locale={locale} />
     </>
   )
 }

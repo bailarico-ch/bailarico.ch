@@ -98,10 +98,10 @@ const texts = {
 
     // Hero
     hero: {
-      // Título principal
+      // Titel (Título principal)
       title: {
         top: 'Tanzschule für',
-        // Lista de palabras
+        // Wortliste (Lista de palabras)
         middle: [
           //
           'Salsa',
@@ -121,12 +121,11 @@ const texts = {
 
     // Kurse
     courses: {
-      // Title
+      // Titel
       title: 'Unsere *Kurse*',
-      // Image
+      // Kursplan (Bild)
       courses: 'Nov-DE.png',
-      // saveCoursesImage: 'Bild speichern',
-      // PDF cursos
+      // Kursplan PDF
       pdf: {
         title: 'Aktueller Kursplan',
         // description: 'inkl. Kursbeschreibungen und weitere Details.',
@@ -134,7 +133,7 @@ const texts = {
         // file: 'bailarico.ch/2022-10-Kursplan-BailaRico.pdf', // Testing: PDF file
         file: 'kursplan-nov-deutsch.pdf', // PDF file
       },
-      // Registration
+      // Anmeldung
       registration: {
         title: 'Anmeldung',
         text: [
@@ -142,7 +141,7 @@ const texts = {
           `Schreib uns eine Nachricht um dich anzumelden.`,
         ],
       },
-      // Pricing
+      // Preise
       pricing: {
         title: 'Preise',
         text: [
@@ -158,9 +157,9 @@ const texts = {
       },
     },
 
-    // Photos
+    // Fotos
     photos: {
-      // Title
+      // Titel
       title: '*Fotos* & Videos',
       controls: {
         back: 'Züruck',
@@ -170,9 +169,9 @@ const texts = {
 
     // Social Media
     socialMedia: {
-      // Title
+      // Titel
       title: '*Social Media*',
-      // Text
+      // Texte
       description: [
         // Cada linea es un parrafo:
         `Folg uns auf *Instagram*, *Facebook* oder *YouTube* und werde Teil unserer Tanz-Community.`,
@@ -185,9 +184,9 @@ const texts = {
 
     // Team
     team: {
-      // Title
+      // Titel
       title: 'Unser *Team*',
-      // Team members
+      // Team
       teamMembers: [
         {
           name: 'Victor Ortega',
@@ -224,28 +223,29 @@ const texts = {
       ],
     },
 
-    // Contact
+    // Kontakt
     contact: {
-      // Title
+      // Titel
       title: '*Kontakt*',
       // Studio
       labelStudioExterior: 'Studio: Aussenansicht',
       labelStudioInterior: 'Studio: Innenansicht',
-      // Email
+      // E-Mail
       labelEmail: 'E-Mail',
       emailAddress: 'info@bailarico.ch',
       linkEmail: 'mailto:info@bailarico.ch',
-      // Phone
+      // Telefon
       labelPhone: 'Telefon / Whatsapp',
       phoneNumber: '+41 78 714 08 63',
       linkPhone: 'tel:+41787140863',
-      // Location
+      // Standort
       labelAddress: 'Standort',
       address: {
         streetAndNumber: 'Hohlstrasse 192',
         postcodeAndCity: '8004 Zürich',
       },
       linkGoogleMaps: 'https://goo.gl/maps/VToqL3NG343hvrfR8',
+      labelSocial: 'Social Media',
       // Map button
       buttonOpenGoogleMaps: 'Google Maps öffnen',
     },
@@ -255,17 +255,17 @@ const texts = {
       buttonScrollToTop: 'Nach oben',
       copyright: 'BailaRico.ch',
       madeInDesktop: 'Made with 🍉 in Zürich',
-      madeInMobile: '🍉',
+      // madeInMobile: '🍉',
       linkToLegal: 'Rechtliches',
     },
 
-    // Error
+    // Fehler
     error: {
       title: 'Seite nicht gefunden',
       button: 'Zur Homepage',
     },
 
-    // Legal
+    // Rechtliches
     legal: {
       title: 'Rechtliches',
       sections: [
@@ -333,10 +333,10 @@ const texts = {
 
     // Hero
     hero: {
-      // Título principal
+      // Title (Título principal)
       title: {
         top: 'Dance Studio for',
-        // Lista de palabras
+        // Words list (Lista de palabras)
         middle: [
           //
           'Salsa',
@@ -358,10 +358,10 @@ const texts = {
     courses: {
       // Title
       title: 'Our *Classes*',
-      // Image
+      // Course Schedule (Image)
       courses: 'Nov-EN.png',
       // saveCoursesImage: 'Save image',
-      // PDF cursos
+      // Course Schedule (PDF)
       pdf: {
         title: 'Current Schedule',
         // description: 'including class descriptions and other details.',
@@ -476,6 +476,7 @@ const texts = {
         streetAndNumber: 'Hohlstrasse 192',
         postcodeAndCity: '8004 Zurich',
       },
+      labelSocial: 'Social Media',
       linkGoogleMaps: 'https://goo.gl/maps/VToqL3NG343hvrfR8',
       // Map button
       buttonOpenGoogleMaps: 'Open Google Maps',
@@ -486,7 +487,7 @@ const texts = {
       buttonScrollToTop: 'Scroll to Top',
       copyright: 'BailaRico.ch',
       madeInDesktop: 'Made with 🍉 in Zurich',
-      madeInMobile: '🍉',
+      // madeInMobile: '🍉',
       linkToLegal: 'Legal',
     },
 

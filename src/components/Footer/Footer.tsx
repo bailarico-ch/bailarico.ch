@@ -7,11 +7,12 @@ import { LinkComponent } from '@/components/Link'
 import styles from './Footer.module.scss'
 
 interface FooterProps {
-  showScrollToTop?: boolean
   t: Translation
+  locale: string
+  showScrollToTop?: boolean
 }
 
-export const Footer = ({ showScrollToTop = true, t }: FooterProps) => {
+export const Footer = ({ t, showScrollToTop = true, locale = 'de' }: FooterProps) => {
   //
   // Methods
   //
@@ -44,6 +45,11 @@ export const Footer = ({ showScrollToTop = true, t }: FooterProps) => {
 
         {/* Content */}
         <div className={`${styles['details']}`}>
+          {/* Made in */}
+          <div className={`${styles['made-in--mobile']}`}>
+            <span>{t.footer.madeInDesktop}</span>
+          </div>
+
           {/* Copyright */}
           <div className={`${styles['details--left']}`}>
             <span>
@@ -52,18 +58,25 @@ export const Footer = ({ showScrollToTop = true, t }: FooterProps) => {
           </div>
 
           {/* Made in */}
-          <div>
-            <span className={`${styles['made-in--desktop']}`}>{t.footer.madeInDesktop}</span>
-            <span className={`${styles['made-in--mobile']}`}>{t.footer.madeInMobile}</span>
+          <div className={`${styles['made-in--desktop']}`}>
+            <span>{t.footer.madeInDesktop}</span>
           </div>
 
           {/* Legal */}
           <div className={`${styles['details--right']}`}>
-            <LinkComponent href={'/rechtliches'}>
-              {/* <a> */}
+            <LinkComponent href="/rechtliches">
               <span>{t.footer.linkToLegal}</span>
-              {/* </a> */}
             </LinkComponent>
+            {locale !== 'de' && (
+              <LinkComponent href="/" skipLocaleHandling={true}>
+                <span>Deutsch</span>
+              </LinkComponent>
+            )}
+            {locale !== 'en' && (
+              <LinkComponent href="/en" skipLocaleHandling={true}>
+                <span>English</span>
+              </LinkComponent>
+            )}
           </div>
         </div>
       </footer>

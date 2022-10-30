@@ -62,7 +62,7 @@ const Error = () => {
       </main>
 
       {/* Footer */}
-      <Footer t={t} showScrollToTop={false} />
+      <Footer t={t} locale={locale} showScrollToTop={false} />
     </>
   )
 }

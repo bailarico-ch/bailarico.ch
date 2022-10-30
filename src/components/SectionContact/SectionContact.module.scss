@@ -210,6 +210,21 @@
               box-shadow: 0 0 0 4px lightgreen;
             }
           }
+
+          & .info-item--social-items {
+            display: flex;
+            flex-direction: row;
+            margin-top: 8px;
+
+            & svg {
+              width: 40px;
+              height: auto;
+            }
+
+            & a + a {
+              margin-left: 16px;
+            }
+          }
         }
       }
 

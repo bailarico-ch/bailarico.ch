@@ -3,6 +3,9 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 import IconLink from '../../assets/external-link.svg'
+import IconInstagram from '../../assets/instagram.svg'
+import IconFacebook from '../../assets/facebook.svg'
+import IconYouTube from '../../assets/youtube.svg'
 
 import sharedStyles from '@/styles/Shared.module.scss'
 import styles from './SectionContact.module.scss'
@@ -87,6 +90,7 @@ export const SectionContact = ({ t }: SectionContactProps) => {
                   <span>{t.contact.emailAddress}</span>
                 </a>
               </div>
+
               {/* Phone */}
               <div className={`${styles['info-item']}`}>
                 <div className={`${styles['label']}`}>{t.contact.labelPhone}</div>
@@ -94,6 +98,7 @@ export const SectionContact = ({ t }: SectionContactProps) => {
                   <span>{t.contact.phoneNumber}</span>
                 </a>
               </div>
+
               {/* Location */}
               <div className={`${styles['info-item']}`}>
                 <div className={`${styles['label']}`}>{t.contact.labelAddress}</div>
@@ -102,6 +107,37 @@ export const SectionContact = ({ t }: SectionContactProps) => {
                   <br />
                   <span>{t.contact.address.postcodeAndCity}</span>
                 </a>
+              </div>
+
+              {/* Social */}
+              <div className={`${styles['info-item']}`}>
+                <div className={`${styles['label']}`}>{t.contact.labelSocial}</div>
+                <div className={`${styles['info-item--social-items']}`}>
+                  <a
+                    href={t.socialMedia.linkInstagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                  >
+                    <IconInstagram />
+                  </a>
+                  <a
+                    href={t.socialMedia.linkFacebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook"
+                  >
+                    <IconFacebook />
+                  </a>
+                  <a
+                    href={t.socialMedia.linkYoutube}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="YouTube"
+                  >
+                    <IconYouTube />
+                  </a>
+                </div>
               </div>
             </div>
 

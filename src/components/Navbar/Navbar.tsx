@@ -33,13 +33,11 @@ export const Navbar = ({ t, refs }: NavbarProps) => {
   detectedLng = i18nConfig.i18n.locales.includes(router.asPath.slice(1))
     ? router.asPath.slice(1)
     : detectedLng
-  // router.asPath === '/' || !i18nConfig.i18n.locales.includes(router.asPath.slice(1))
 
   //
   // State
   //
 
-  // const homePages = i18nConfig.i18n.locales.map((p) => (p === 'de' ? '/' : `/${p}`))
   const homePages = i18nConfig.i18n.locales.map((p) => `/${p}`)
   homePages.push('/')
   const [isHomePage, setHomePage] = useState(true)
