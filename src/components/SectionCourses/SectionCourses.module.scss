@@ -3,7 +3,7 @@
 .courses {
   overflow: hidden;
   // padding: 80px 0;
-  padding: 64px 0;
+  padding: 64px 0 96px;
   background: $background--red;
 
   // @media screen and (max-width: 1024px) {
@@ -22,146 +22,316 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    // align-items: center;
-    align-items: flex-start;
-
-    // @media screen and (max-width: 1440px) {
-    //   align-items: flex-start;
-    // }
+    align-items: center;
 
     @media screen and (max-width: 1024px) {
       flex-direction: column;
-      align-items: center;
     }
 
-    & .image {
-      flex: none;
-      // width: min(800px, calc(100% - 20px));
-      width: min(800px, calc(50% - 20px));
+    // Table
+    & .table {
+      background-color: white;
+      padding: 24px;
+      max-width: 720px;
+      width: 100%;
+      // height: 862px;
 
-      // border: 8px solid $color--red-500;
-      border: 8px solid $color--light-100;
-      background-color: $color--light-100;
-      box-sizing: content-box;
-      box-shadow: 0px 40px 160px rgba(0, 0, 0, 0.2);
-
-      @media screen and (max-width: 1440px) {
-        width: min(800px, calc(50% - 40px));
-      }
-
-      @media screen and (max-width: 1024px) {
-        // @media screen and (max-width: 480px) {
-        width: min(800px, calc(100% - 10px));
-        border: none;
-      }
-    }
-
-    // PDF Card
-    & .pdf-card {
-      padding: 28px 28px;
-      background-color: $color--light-100;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 16px;
-      border-radius: 2px;
-
-      @media screen and (max-width: 1024px) {
-        padding: 32px 28px 26px;
-      }
-
-      & .pdf-card__main {
-        display: flex;
-        // flex-direction: row;
-        // align-items: flex-start;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin: 0 0 24px;
-
-        @media screen and (max-width: 1024px) {
-          width: auto;
-        }
-
-        // @media screen and (max-width: 480px) {
-        // flex-direction: column;
-        // align-items: center;
-        // width: 100%;
-        // }
-
-        & .pdf-card__image {
-          width: 84px;
-          height: 104px;
-          margin-right: 24px;
-
-          @media screen and (max-width: 480px) {
-            margin: 0 0 16px 0;
-          }
-
-          & img {
-            width: 100%;
-            height: 100%;
-          }
-        }
-
-        & .pdf-card__title {
-          color: $color--dark-900;
-          font-size: 28px;
-          line-height: 28px;
-          font-weight: 700;
-          // margin-bottom: 8px;
-          margin: 8px 0;
-          letter-spacing: -0.01em;
-        }
-
-        & .pdf-card__description {
-          color: $color--dark-500;
-          font-size: 280x;
-          line-height: 28px;
-          max-width: 260px;
-        }
-      }
-
-      & .pdf-card__button {
+      & .table__header {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-        color: $color--light-100;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 24px;
-        letter-spacing: 0.01em;
-        // background-color: $color--red-500;
-        background-color: $color--red-600;
-        width: max-content;
-        transition: opacity 0.3s;
-        border-radius: 28px;
-        height: 56px;
-        padding: 12px 28px;
 
-        @media screen and (max-width: 480px) {
-          font-size: 20px;
+        & .table__title,
+        & .table__subtitle {
+          text-transform: uppercase;
+        }
+
+        & .table__title {
+          color: $color--dark-900;
+          font-size: 32px;
+          line-height: 40px;
+          font-weight: 700;
+        }
+
+        & .table__subtitle {
+          color: $color--dark-900;
+          font-size: 28px;
+          line-height: 40px;
+          font-weight: 700;
+        }
+      }
+
+      & .table__levels {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 12px 0;
+
+        & .table__level {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 6px;
+          font-weight: 500;
+          font-size: 16px;
           line-height: 24px;
+
+          & svg {
+            width: 40px;
+            height: 12px;
+          }
+        }
+      }
+
+      // Schedule / Days / Timetable
+      & .table__schedule {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 16px 0;
+
+        & .table__day {
+          display: flex;
+          flex-direction: column;
+
+          & .table__day__name {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 8px;
+            background-color: $color--red-600;
+            color: white;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 4px 6px;
+            letter-spacing: 0.25em;
+            font-size: 12px;
+            line-height: 12px;
+          }
+
+          & .timeslots {
+            background-color: white;
+            border: 1px solid $color--light-700;
+
+            & .timeslot {
+              display: flex;
+              flex-direction: row;
+
+              & + .timeslot {
+                border-top: 1px solid $color--light-700;
+              }
+
+              & .course {
+                display: flex;
+                flex-direction: row;
+                width: 50%;
+                padding: 3px 6px;
+
+                // & + .course {
+                //   border-left: 1px solid $color--light-900;
+                // }
+
+                & .course-spec {
+                  display: flex;
+                  flex-direction: column;
+                  width: 50px;
+
+                  & .course-spec__time {
+                    font-family: $font--condensed;
+                    font-size: 16px;
+                    line-height: 20px;
+                    // font-weight: 700;
+                    letter-spacing: 0.05em;
+                  }
+
+                  & .course-spec__level {
+                    & svg {
+                      width: 40px;
+                      height: 12px;
+                    }
+                  }
+                }
+
+                & .course-info {
+                  display: flex;
+                  flex-direction: column;
+
+                  & .course-info__name {
+                    font-family: $font--condensed;
+                    font-size: 18px;
+                    line-height: 22px;
+                    // font-weight: 'Condensed Bold';
+                    letter-spacing: 0.02em;
+                    text-transform: uppercase;
+                  }
+
+                  & .course-info__instructor {
+                    font-size: 8px;
+                    line-height: 12px;
+                    font-weight: 700;
+                    letter-spacing: 0.3em;
+                    color: $color--dark-500;
+                    text-transform: uppercase;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      & .table__footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 12px 0 0;
+
+        & .table__footer__left,
+        & .table__footer__right {
+          display: flex;
+          flex-direction: column;
+          color: $color--dark-900;
+          font-size: 12px;
+          line-height: 16px;
+          font-weight: 700;
         }
 
-        &:hover {
-          background-color: $color--red-700;
-        }
-
-        &:focus-within {
-          box-shadow: 0 0 0 4px lightgreen;
-        }
-
-        & span {
-          margin: 0 8px;
-        }
-
-        & svg {
-          margin: 0 4px;
+        & .table__footer__right {
+          text-align: right;
         }
       }
     }
+
+    // Old: Image
+    // & .image {
+    //   flex: none;
+    //   // width: min(800px, calc(100% - 20px));
+    //   width: min(800px, calc(50% - 20px));
+
+    //   // border: 8px solid $color--red-500;
+    //   border: 8px solid $color--light-100;
+    //   background-color: $color--light-100;
+    //   box-sizing: content-box;
+    //   box-shadow: 0px 40px 160px rgba(0, 0, 0, 0.2);
+
+    //   @media screen and (max-width: 1440px) {
+    //     width: min(800px, calc(50% - 40px));
+    //   }
+
+    //   @media screen and (max-width: 1024px) {
+    //     // @media screen and (max-width: 480px) {
+    //     width: min(800px, calc(100% - 10px));
+    //     border: none;
+    //   }
+    // }
+
+    // Old: PDF Card
+    // & .pdf-card {
+    //   padding: 28px 28px;
+    //   background-color: $color--light-100;
+    //   display: flex;
+    //   flex-direction: column;
+    //   align-items: center;
+    //   justify-content: center;
+    //   margin-bottom: 16px;
+    //   border-radius: 2px;
+
+    //   @media screen and (max-width: 1024px) {
+    //     padding: 32px 28px 26px;
+    //   }
+
+    //   & .pdf-card__main {
+    //     display: flex;
+    //     // flex-direction: row;
+    //     // align-items: flex-start;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     width: 100%;
+    //     margin: 0 0 24px;
+
+    //     @media screen and (max-width: 1024px) {
+    //       width: auto;
+    //     }
+
+    //     // @media screen and (max-width: 480px) {
+    //     // flex-direction: column;
+    //     // align-items: center;
+    //     // width: 100%;
+    //     // }
+
+    //     & .pdf-card__image {
+    //       width: 84px;
+    //       height: 104px;
+    //       margin-right: 24px;
+
+    //       @media screen and (max-width: 480px) {
+    //         margin: 0 0 16px 0;
+    //       }
+
+    //       & img {
+    //         width: 100%;
+    //         height: 100%;
+    //       }
+    //     }
+
+    //     & .pdf-card__title {
+    //       color: $color--dark-900;
+    //       font-size: 28px;
+    //       line-height: 28px;
+    //       font-weight: 700;
+    //       // margin-bottom: 8px;
+    //       margin: 8px 0;
+    //       letter-spacing: -0.01em;
+    //     }
+
+    //     & .pdf-card__description {
+    //       color: $color--dark-500;
+    //       font-size: 280x;
+    //       line-height: 28px;
+    //       max-width: 260px;
+    //     }
+    //   }
+
+    //   & .pdf-card__button {
+    //     display: flex;
+    //     flex-direction: row;
+    //     align-items: center;
+    //     color: $color--light-100;
+    //     font-weight: 700;
+    //     font-size: 20px;
+    //     line-height: 24px;
+    //     letter-spacing: 0.01em;
+    //     // background-color: $color--red-500;
+    //     background-color: $color--red-600;
+    //     width: max-content;
+    //     transition: opacity 0.3s;
+    //     border-radius: 28px;
+    //     height: 56px;
+    //     padding: 12px 28px;
+
+    //     @media screen and (max-width: 480px) {
+    //       font-size: 20px;
+    //       line-height: 24px;
+    //     }
+
+    //     &:hover {
+    //       background-color: $color--red-700;
+    //     }
+
+    //     &:focus-within {
+    //       box-shadow: 0 0 0 4px lightgreen;
+    //     }
+
+    //     & span {
+    //       margin: 0 8px;
+    //     }
+
+    //     & svg {
+    //       margin: 0 4px;
+    //     }
+    //   }
+    // }
 
     // Content
     & .content {
@@ -197,17 +367,6 @@
         flex: none;
         display: flex;
         flex-direction: column;
-        // justify-content: space-between;
-        // width: min(800px, calc(100% - 20px));
-        // width: min(480px, calc(100% - 20px));
-        // margin: 0 80px 0;
-        // margin: 0 64px 0;
-        // padding: 0 10px;
-
-        @media screen and (max-width: 1440px) {
-          // margin: 0 40px 0;
-          // margin: 0 20px 0;
-        }
 
         @media screen and (max-width: 1024px) {
           flex-direction: row;
@@ -225,8 +384,7 @@
 
         & .detail {
           width: min(360px, calc(100% - 20px));
-          // margin: 64px 0 0;
-          margin: 40px 0 0;
+          margin: 0 0 40px;
 
           @media screen and (max-width: 1024px) {
             width: 100%;
@@ -234,7 +392,6 @@
 
           @media screen and (max-width: 480px) {
             width: min(360px, calc(100% - 20px));
-            margin: 0 0 40px;
           }
 
           & h3 {

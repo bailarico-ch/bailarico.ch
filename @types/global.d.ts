@@ -73,15 +73,39 @@ interface Translation {
   courses: {
     // Title
     title: string
-    // Image
-    courses: string
-    // PDF card
-    pdf: {
-      title: string
-      // description: string
-      button: string
-      file: string
+    table: {
+      header: {
+        title: string
+        subtitle: string
+      }
+      levels: {
+        level0: string
+        level1: string
+        level2: string
+        level3: string
+      }
+      days: {
+        monday: string
+        tuesday: string
+        wednesday: string
+        thursday: string
+        friday: string
+        saturday: string
+      }
+      footer: {
+        duration: string
+        durationTime: string
+      }
     }
+    // Old: Image
+    // courses: string
+    // Old: PDF card
+    // pdf: {
+    //   title: string
+    //   // description: string
+    //   button: string
+    //   file: string
+    // }
     // Registration
     registration: {
       title: string

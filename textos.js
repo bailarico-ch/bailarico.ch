@@ -80,7 +80,7 @@ const texts = {
       home: {
         pageTitle: 'BailaRico - Tanzschule für Salsa in Zürich',
         pageDescription:
-          'Lerne Salsa tanzen in Zürich. Tanzschule BailaRico bietet Tanzkurse für Salsa On1, Salsa On2 (Mambo), Cha Cha Cha, Ladies Style, Urban, High Heels und Bachata an.',
+          'Lerne Salsa tanzen in Zürich. Tanzschule BailaRico bietet Tanzkurse für Salsa On1, Salsa On2 (Mambo), Cha Cha Cha, Ladies Style, Urban und High Heels an.',
       },
       error: {
         pageTitle: 'Seite nicht gefunden - Bailarico',
@@ -108,14 +108,13 @@ const texts = {
           'Cha Cha Cha',
           'High Heels',
           'Urban',
-          'Bachata',
         ],
         bottom: 'in Zürich',
       },
       intro: [
         // Cada linea es un parrafo:
         `*BailaRico*, deine Lieblings-Tanzschule in Zürich.`,
-        `Seit über 10 Jahren bietet BailaRico Kurse für *Salsa&nbsp;On1* (Linie), *Salsa&nbsp;On2* (NY&nbsp;/&nbsp;Mambo), *Ladies&nbsp;Style*, *High&nbsp;Heels*, *Urban* und *Bachata* an.`,
+        `Seit über 10 Jahren bietet BailaRico Kurse für *Salsa&nbsp;On1* (Linie), *Salsa&nbsp;On2* (NY&nbsp;/&nbsp;Mambo), *Ladies&nbsp;Style*, *Urban* und *High&nbsp;Heels* an.`,
       ],
     },
 
@@ -123,16 +122,41 @@ const texts = {
     courses: {
       // Titel
       title: 'Unsere *Kurse*',
-      // Kursplan (Bild)
-      courses: 'Kursplan-Jan-2023-DE.png',
-      // Kursplan PDF
-      pdf: {
-        title: 'Aktueller Kursplan',
-        // description: 'inkl. Kursbeschreibungen und weitere Details.',
-        button: 'PDF herunterladen',
-        // file: 'bailarico.ch/2022-10-Kursplan-BailaRico.pdf', // Testing: PDF file
-        file: 'kursplan-jan-2023-deutsch.pdf', // PDF file
+      // Tabelle
+      table: {
+        header: {
+          title: 'Kursplan',
+          subtitle: 'Ab 1. Juni 2024',
+        },
+        levels: {
+          level0: 'Einsteiger',
+          level1: 'Anfänger',
+          level2: 'Ab Mittelstufe',
+          level3: 'Fortgeschrittene',
+        },
+        days: {
+          monday: 'Montag',
+          tuesday: 'Dienstag',
+          wednesday: 'Mittwoch',
+          thursday: 'Donnerstag',
+          friday: 'Freitag',
+          saturday: 'Samstag',
+        },
+        footer: {
+          duration: 'Alle Kurse dauern',
+          durationTime: '60 Minuten',
+        },
       },
+      // // Old: Kursplan (Bild)
+      // courses: 'Kursplan-Jan-2023-DE.png',
+      // // Old: Kursplan PDF
+      // pdf: {
+      //   title: 'Aktueller Kursplan',
+      //   // description: 'inkl. Kursbeschreibungen und weitere Details.',
+      //   button: 'PDF herunterladen',
+      //   // file: 'bailarico.ch/2022-10-Kursplan-BailaRico.pdf', // Testing: PDF file
+      //   file: 'kursplan-jan-2023-deutsch.pdf', // PDF file
+      // },
       // Anmeldung
       registration: {
         title: 'Anmeldung',
@@ -151,8 +175,6 @@ const texts = {
           `*CHF 220.-* für eine 10er Abo-Karte. 
           <br>
           Abo-Karte gültig für alle Kurse!`,
-          //
-          // `Zahlung: Twint oder Bargeld.`,
         ],
       },
     },
@@ -197,16 +219,16 @@ const texts = {
           ],
         },
         {
-          name: 'Muriel Lowis',
-          job: 'Salsa, Bachata',
+          name: 'Vesna Granulic',
+          job: 'Salsa, Heels, Urban',
           summary: [
             //
             // `...`,
           ],
         },
         {
-          name: 'Vesna Granulic',
-          job: 'Salsa, Heels, Urban',
+          name: 'Muriel Lowis',
+          job: 'Salsa, Bachata',
           summary: [
             //
             // `...`,
@@ -315,7 +337,7 @@ const texts = {
       home: {
         pageTitle: 'BailaRico - Salsa Dance School in Zurich',
         pageDescription:
-          'Learn to dance Salsa in Zurich. BailaRico is a dance school offering dance classes for Salsa On1, Salsa On2 (Mambo), Cha Cha Cha, Ladies Style, Urban, High Heels and Bachata.',
+          'Learn to dance Salsa in Zurich. BailaRico is a dance school offering dance classes for Salsa On1, Salsa On2 (Mambo), Cha Cha Cha, Ladies Style, Urban, and High Heels.',
       },
       error: {
         pageTitle: 'Page Not Found - Bailarico',
@@ -343,14 +365,13 @@ const texts = {
           'Cha Cha Cha',
           'High Heels',
           'Urban',
-          'Bachata',
         ],
         bottom: 'in Zurich',
       },
       intro: [
         // Cada linea es un parrafo:
         `*BailaRico*, your favorite salsa dance school in Zurich.`,
-        `For over 10 years, BailaRico has offered dance classes for *Salsa*&nbsp;(On1), *Salsa&nbsp;On2* (NY&nbsp;/&nbsp;Mambo), *Ladies&nbsp;Style*, *Urban*, *High&nbsp;Heels*, and *Bachata*.`,
+        `For over 10 years, BailaRico has offered dance classes for *Salsa*&nbsp;(On1), *Salsa&nbsp;On2* (NY&nbsp;/&nbsp;Mambo), *Ladies&nbsp;Style*, *Urban*, and *High&nbsp;Heels*.`,
       ],
     },
 
@@ -358,23 +379,47 @@ const texts = {
     courses: {
       // Title
       title: 'Our *Classes*',
-      // Course Schedule (Image)
-      courses: 'Schedule-Jan-2023-EN.png',
-      // saveCoursesImage: 'Save image',
-      // Course Schedule (PDF)
-      pdf: {
-        title: 'Current Schedule',
-        // description: 'including class descriptions and other details.',
-        button: 'Download PDF',
-        // file: 'bailarico.ch/2022-10-Schedule-BailaRico.pdf', // testing: PDF file
-        file: 'schedule-jan-2023-english.pdf', // PDF file
+      // Table
+      table: {
+        header: {
+          title: 'Schedule',
+          subtitle: 'From 1. June 2024',
+        },
+        levels: {
+          level0: 'Newcomer',
+          level1: 'Beginner',
+          level2: 'Intermediate',
+          level3: 'Advanced',
+        },
+        days: {
+          monday: 'Monday',
+          tuesday: 'Tuesday',
+          wednesday: 'Wednesday',
+          thursday: 'Thursday',
+          friday: 'Friday',
+          saturday: 'Saturday',
+        },
+        footer: {
+          duration: 'All classes are',
+          durationTime: '60 minutes',
+        },
       },
+      // // Old: Course Schedule (Image)
+      // courses: 'Schedule-Jan-2023-EN.png',
+      // // Old: Course Schedule (PDF)
+      // pdf: {
+      //   title: 'Current Schedule',
+      //   // description: 'including class descriptions and other details.',
+      //   button: 'Download PDF',
+      //   // file: 'bailarico.ch/2022-10-Schedule-BailaRico.pdf', // testing: PDF file
+      //   file: 'schedule-jan-2023-english.pdf', // PDF file
+      // },
       // Registration
       registration: {
         title: 'Sign Up',
         text: [
           //
-          `Sign up for our classes by writing us a message.`,
+          `Sign up for our classes by writing us a text message or email.`,
         ],
       },
       // Pricing
@@ -383,7 +428,7 @@ const texts = {
         text: [
           //
           `*CHF 25.-* for a single lesson.`,
-          `*CHF 220.-* for a 10-lesson Member Card. Card is valid for all our classes!`,
+          `*CHF 220.-* for a 10-lesson Member Card. The Member Card is valid for all our classes!`,
         ],
       },
     },
@@ -428,16 +473,16 @@ const texts = {
           ],
         },
         {
-          name: 'Muriel Lowis',
-          job: 'Salsa, Bachata',
+          name: 'Vesna Granulic',
+          job: 'Salsa, Heels, Urban',
           summary: [
             //
             // `...`,
           ],
         },
         {
-          name: 'Vesna Granulic',
-          job: 'Salsa, Heels, Urban',
+          name: 'Muriel Lowis',
+          job: 'Salsa, Bachata',
           summary: [
             //
             // `...`,

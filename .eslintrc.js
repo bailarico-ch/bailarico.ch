@@ -4,6 +4,7 @@ module.exports = {
     es2021: true,
   },
   extends: [
+    //
     'next/core-web-vitals',
     'eslint:recommended',
     'plugin:react/recommended',
@@ -17,8 +18,15 @@ module.exports = {
     ecmaVersion: 13,
     sourceType: 'module',
   },
-  plugins: ['react', 'react-hooks', '@typescript-eslint', 'prettier'],
+  plugins: [
+    //
+    'react',
+    'react-hooks',
+    '@typescript-eslint',
+    'prettier',
+  ],
   rules: {
+    //
     'react-hooks/exhaustive-deps': 'warn',
     'react/no-unescaped-entities': 'off',
     '@typescript-eslint/no-explicit-any': 'off',

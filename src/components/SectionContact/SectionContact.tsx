@@ -83,19 +83,19 @@ export const SectionContact = ({ t }: SectionContactProps) => {
           <div className={`${styles['details']}`}>
             {/* Details */}
             <div className={`${styles['info']}`}>
-              {/* Email */}
-              <div className={`${styles['info-item']}`}>
-                <div className={`${styles['label']}`}>{t.contact.labelEmail}</div>
-                <a href={t.contact.linkEmail} target="_blank" rel="noopener noreferrer">
-                  <span>{t.contact.emailAddress}</span>
-                </a>
-              </div>
-
               {/* Phone */}
               <div className={`${styles['info-item']}`}>
                 <div className={`${styles['label']}`}>{t.contact.labelPhone}</div>
                 <a href={t.contact.linkPhone} target="_blank" rel="noopener noreferrer">
                   <span>{t.contact.phoneNumber}</span>
+                </a>
+              </div>
+
+              {/* Email */}
+              <div className={`${styles['info-item']}`}>
+                <div className={`${styles['label']}`}>{t.contact.labelEmail}</div>
+                <a href={t.contact.linkEmail} target="_blank" rel="noopener noreferrer">
+                  <span>{t.contact.emailAddress}</span>
                 </a>
               </div>
 
