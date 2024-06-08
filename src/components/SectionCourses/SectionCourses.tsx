@@ -139,7 +139,7 @@ export const SectionCourses = ({ t, locale = 'de' }: SectionCoursesProps) => {
                 <span>{t.courses.table.footer.durationTime}</span>
               </div>
               {/* Logo */}
-              <div>
+              <div className={`${styles['table__footer__logo']}`}>
                 <img
                   src={`/logo.svg`}
                   alt="Bailarico Logo"

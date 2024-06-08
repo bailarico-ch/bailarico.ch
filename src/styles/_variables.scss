@@ -1,5 +1,25 @@
 // Load fonts
-// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@500&display=swap');
+// @font-face {
+//   font-family: 'Helvetica Neue Condensed Bold';
+//   src: url('/fonts/HelveticaNeue-BoldCondensed.otf') format('opentype');
+//   font-weight: bold;
+//   font-style: normal;
+//   font-stretch: condensed;
+// }
+
+// @font-face {
+//   font-family: 'Helvetica Neue';
+//   src: url('/fonts/HelveticaNeue.otf') format('opentype');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Helvetica Neue';
+//   src: url('/fonts/HelveticaNeue-Bold.otf') format('opentype');
+//   font-weight: bold;
+//   font-style: normal;
+// }
 
 //
 // Colors
@@ -55,10 +75,7 @@ $background--red: radial-gradient(
 //
 
 $font--main: 'Helvetica Neue', 'Helvetica', -apple-system, 'Arial', sans-serif;
-$font--condensed: 'HelveticaNeue-CondensedBold', 'HelveticaNeueBoldCondensed',
-  'HelveticaNeue-Bold-Condensed', 'Helvetica Neue Bold Condensed', 'Helvetica', -apple-system,
-  'Arial', sans-serif;
-// $font--condensed: 'Helvetica Neue Condensed', 'Helvetica', -apple-system, 'Arial', sans-serif;
-// $font--secondary: 'Roboto', -apple-system, 'Helvetica Neue', 'Helvetica Neue', 'Helvetica', 'Arial',
-//   sans-serif;
-// $font--mono: 'Roboto Mono', monospace;
+$font--condensed: 'HelveticaNeue-CondensedBold', 'HelveticaNeue-BoldCondensed',
+  'HelveticaNeueBoldCondensed', 'HelveticaNeueCondensedBold', 'HelveticaNeue-Bold-Condensed',
+  'HelveticaNeue-Condensed-Bold', 'Helvetica Neue Condensed Bold', 'Helvetica Neue Bold Condensed',
+  'Helvetica Neue', 'Helvetica', -apple-system, 'Arial', sans-serif;

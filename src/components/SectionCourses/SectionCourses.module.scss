@@ -2,7 +2,6 @@
 
 .courses {
   overflow: hidden;
-  // padding: 80px 0;
   padding: 64px 0 96px;
   background: $background--red;
 
@@ -34,7 +33,18 @@
       padding: 24px;
       max-width: 720px;
       width: 100%;
-      // height: 862px;
+
+      @media screen and (max-width: 580px) {
+        padding: 16px;
+      }
+
+      @media screen and (max-width: 480px) {
+        padding: 12px;
+      }
+
+      @media screen and (max-width: 400px) {
+        padding: 12px 8px;
+      }
 
       & .table__header {
         display: flex;
@@ -49,9 +59,39 @@
 
         & .table__title {
           color: $color--dark-900;
+          font-weight: 700;
           font-size: 32px;
           line-height: 40px;
-          font-weight: 700;
+
+          @media screen and (max-width: 1080px) {
+            font-size: 30px;
+            line-height: 36px;
+          }
+
+          @media screen and (max-width: 1024px) {
+            font-size: 32px;
+            line-height: 40px;
+          }
+
+          @media screen and (max-width: 640px) {
+            font-size: 30px;
+            line-height: 36px;
+          }
+
+          @media screen and (max-width: 580px) {
+            font-size: 28px;
+            line-height: 32px;
+          }
+
+          @media screen and (max-width: 480px) {
+            font-size: 26px;
+            line-height: 28px;
+          }
+
+          @media screen and (max-width: 400px) {
+            font-size: 24px;
+            line-height: 28px;
+          }
         }
 
         & .table__subtitle {
@@ -59,6 +99,36 @@
           font-size: 28px;
           line-height: 40px;
           font-weight: 700;
+
+          @media screen and (max-width: 1080px) {
+            font-size: 26px;
+            line-height: 32px;
+          }
+
+          @media screen and (max-width: 1024px) {
+            font-size: 28px;
+            line-height: 40px;
+          }
+
+          @media screen and (max-width: 640px) {
+            font-size: 26px;
+            line-height: 32px;
+          }
+
+          @media screen and (max-width: 580px) {
+            font-size: 24px;
+            line-height: 28px;
+          }
+
+          @media screen and (max-width: 480px) {
+            font-size: 22px;
+            line-height: 24px;
+          }
+
+          @media screen and (max-width: 400px) {
+            font-size: 20px;
+            line-height: 24px;
+          }
         }
       }
 
@@ -67,6 +137,10 @@
         flex-direction: row;
         justify-content: space-between;
         margin: 12px 0;
+
+        @media screen and (max-width: 480px) {
+          margin: 8px 0;
+        }
 
         & .table__level {
           display: flex;
@@ -77,9 +151,70 @@
           font-size: 16px;
           line-height: 24px;
 
+          @media screen and (max-width: 1200px) {
+            font-size: 15px;
+            line-height: 20px;
+          }
+
+          @media screen and (max-width: 1080px) {
+            font-size: 13px;
+            line-height: 20px;
+          }
+
+          @media screen and (max-width: 1024px) {
+            font-size: 16px;
+            line-height: 24px;
+          }
+
+          @media screen and (max-width: 640px) {
+            font-size: 15px;
+            line-height: 20px;
+          }
+
+          @media screen and (max-width: 580px) {
+            font-size: 13px;
+            line-height: 20px;
+          }
+
+          @media screen and (max-width: 480px) {
+            font-size: 12px;
+            line-height: 20px;
+            gap: 2px;
+          }
+
+          @media screen and (max-width: 400px) {
+            font-size: 11px;
+            line-height: 20px;
+          }
+
           & svg {
+            flex: none;
             width: 40px;
             height: 12px;
+
+            @media screen and (max-width: 1200px) {
+              width: 32px;
+            }
+
+            @media screen and (max-width: 1024px) {
+              width: 40px;
+            }
+
+            @media screen and (max-width: 640px) {
+              width: 32px;
+            }
+
+            @media screen and (max-width: 580px) {
+              width: 28px;
+            }
+
+            @media screen and (max-width: 480px) {
+              width: 24px;
+            }
+
+            @media screen and (max-width: 400px) {
+              width: 20px;
+            }
           }
         }
       }
@@ -91,6 +226,16 @@
         gap: 12px;
         margin: 16px 0;
 
+        @media screen and (max-width: 480px) {
+          margin: 12px 0;
+          gap: 8px;
+        }
+
+        @media screen and (max-width: 400px) {
+          margin: 8px 0;
+          gap: 6px;
+        }
+
         & .table__day {
           display: flex;
           flex-direction: column;
@@ -99,7 +244,6 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            gap: 8px;
             background-color: $color--red-600;
             color: white;
             font-weight: 700;
@@ -108,6 +252,29 @@
             letter-spacing: 0.25em;
             font-size: 12px;
             line-height: 12px;
+
+            @media screen and (max-width: 1200px) {
+              font-size: 11px;
+              line-height: 11px;
+              padding: 3px 6px;
+            }
+
+            @media screen and (max-width: 1024px) {
+              font-size: 12px;
+              line-height: 12px;
+              padding: 4px 6px;
+            }
+
+            @media screen and (max-width: 640px) {
+              font-size: 11px;
+              line-height: 11px;
+              padding: 3px 6px;
+            }
+
+            @media screen and (max-width: 480px) {
+              font-size: 10px;
+              line-height: 10px;
+            }
           }
 
           & .timeslots {
@@ -137,18 +304,83 @@
                   flex-direction: column;
                   width: 50px;
 
+                  @media screen and (max-width: 1200px) {
+                    width: 44px;
+                  }
+
+                  @media screen and (max-width: 1024px) {
+                    width: 50px;
+                  }
+
+                  @media screen and (max-width: 640px) {
+                    width: 44px;
+                  }
+
+                  @media screen and (max-width: 480px) {
+                    width: 40px;
+                  }
+
+                  @media screen and (max-width: 400px) {
+                    width: 36px;
+                  }
+
                   & .course-spec__time {
                     font-family: $font--condensed;
                     font-size: 16px;
                     line-height: 20px;
-                    // font-weight: 700;
                     letter-spacing: 0.05em;
+                    font-stretch: condensed;
+
+                    @media screen and (max-width: 1200px) {
+                      font-size: 15px;
+                      line-height: 20px;
+                    }
+
+                    @media screen and (max-width: 1024px) {
+                      font-size: 16px;
+                      line-height: 20px;
+                    }
+
+                    @media screen and (max-width: 640px) {
+                      font-size: 15px;
+                      line-height: 20px;
+                    }
+
+                    @media screen and (max-width: 480px) {
+                      font-size: 14px;
+                      line-height: 18px;
+                    }
+
+                    @media screen and (max-width: 400px) {
+                      font-size: 13px;
+                      line-height: 16px;
+                    }
                   }
 
                   & .course-spec__level {
                     & svg {
                       width: 40px;
                       height: 12px;
+
+                      @media screen and (max-width: 1200px) {
+                        width: 32px;
+                        height: 12px;
+                      }
+
+                      @media screen and (max-width: 1024px) {
+                        width: 40px;
+                        height: 12px;
+                      }
+
+                      @media screen and (max-width: 640px) {
+                        width: 32px;
+                        height: 12px;
+                      }
+
+                      @media screen and (max-width: 400px) {
+                        width: 28px;
+                        height: 12px;
+                      }
                     }
                   }
                 }
@@ -161,9 +393,34 @@
                     font-family: $font--condensed;
                     font-size: 18px;
                     line-height: 22px;
-                    // font-weight: 'Condensed Bold';
                     letter-spacing: 0.02em;
                     text-transform: uppercase;
+                    font-stretch: condensed;
+
+                    @media screen and (max-width: 1200px) {
+                      font-size: 16px;
+                      line-height: 20px;
+                    }
+
+                    @media screen and (max-width: 1024px) {
+                      font-size: 18px;
+                      line-height: 22px;
+                    }
+
+                    @media screen and (max-width: 640px) {
+                      font-size: 16px;
+                      line-height: 20px;
+                    }
+
+                    @media screen and (max-width: 480px) {
+                      font-size: 14px;
+                      line-height: 18px;
+                    }
+
+                    @media screen and (max-width: 400px) {
+                      font-size: 12px;
+                      line-height: 16px;
+                    }
                   }
 
                   & .course-info__instructor {
@@ -173,6 +430,11 @@
                     letter-spacing: 0.3em;
                     color: $color--dark-500;
                     text-transform: uppercase;
+
+                    @media screen and (max-width: 400px) {
+                      font-size: 7px;
+                      line-height: 10px;
+                    }
                   }
                 }
               }
@@ -195,10 +457,38 @@
           font-size: 12px;
           line-height: 16px;
           font-weight: 700;
+
+          @media screen and (max-width: 1080px) {
+            font-size: 11px;
+            line-height: 14px;
+          }
+
+          @media screen and (max-width: 1024px) {
+            font-size: 12px;
+            line-height: 16px;
+          }
+
+          @media screen and (max-width: 640px) {
+            font-size: 11px;
+            line-height: 14px;
+          }
+
+          @media screen and (max-width: 480px) {
+            font-size: 10px;
+            line-height: 12px;
+          }
         }
 
         & .table__footer__right {
           text-align: right;
+        }
+
+        & .table__footer__logo {
+          & img {
+            @media screen and (max-width: 480px) {
+              width: 88px;
+            }
+          }
         }
       }
     }
@@ -206,10 +496,8 @@
     // Old: Image
     // & .image {
     //   flex: none;
-    //   // width: min(800px, calc(100% - 20px));
     //   width: min(800px, calc(50% - 20px));
 
-    //   // border: 8px solid $color--red-500;
     //   border: 8px solid $color--light-100;
     //   background-color: $color--light-100;
     //   box-sizing: content-box;
@@ -220,7 +508,6 @@
     //   }
 
     //   @media screen and (max-width: 1024px) {
-    //     // @media screen and (max-width: 480px) {
     //     width: min(800px, calc(100% - 10px));
     //     border: none;
     //   }
@@ -243,8 +530,6 @@
 
     //   & .pdf-card__main {
     //     display: flex;
-    //     // flex-direction: row;
-    //     // align-items: flex-start;
     //     flex-direction: column;
     //     align-items: center;
     //     width: 100%;
@@ -253,12 +538,6 @@
     //     @media screen and (max-width: 1024px) {
     //       width: auto;
     //     }
-
-    //     // @media screen and (max-width: 480px) {
-    //     // flex-direction: column;
-    //     // align-items: center;
-    //     // width: 100%;
-    //     // }
 
     //     & .pdf-card__image {
     //       width: 84px;
@@ -280,7 +559,6 @@
     //       font-size: 28px;
     //       line-height: 28px;
     //       font-weight: 700;
-    //       // margin-bottom: 8px;
     //       margin: 8px 0;
     //       letter-spacing: -0.01em;
     //     }
@@ -302,7 +580,6 @@
     //     font-size: 20px;
     //     line-height: 24px;
     //     letter-spacing: 0.01em;
-    //     // background-color: $color--red-500;
     //     background-color: $color--red-600;
     //     width: max-content;
     //     transition: opacity 0.3s;
@@ -338,23 +615,15 @@
       flex: none;
       display: flex;
       flex-direction: column;
-      // justify-content: space-between;
-      // width: min(800px, calc(100% - 20px));
-      width: min(480px, calc(100% - 20px));
-      // margin: 0 80px 0;
       margin: 0 64px 0;
-      // padding: 0 10px;
 
       @media screen and (max-width: 1440px) {
         margin: 0 20px 0 40px;
-        // margin: 0 20px 0;
       }
 
       @media screen and (max-width: 1024px) {
         margin: 64px 0 0;
-        // flex-direction: row;
         width: min(800px, calc(100% - 40px));
-        // width: min(800px, 100%);
       }
 
       @media screen and (max-width: 767px) {
@@ -413,13 +682,11 @@
           }
 
           & .text {
-            // color: #ffeeee;
             color: $color--red-100;
             font-weight: 500;
             font-size: 20px;
             line-height: 28px;
 
-            // & p {&+ p {}}
             & p {
               margin-bottom: 24px;
             }
@@ -436,36 +703,17 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        // width: min(700px, 100%);
-        // width: min(700px, calc(50% - 10px));
         margin: 0;
-        // background-color: red;
-
-        // & > * {
-        //   margin: 0 0 24px;
-        // }
-
-        // @media screen and (max-width: 800px) {
-        //   width: 100%;
-        //   // min-height: 440px;
-        //   // margin: 0 0 20px;
-        // }
-
-        // @media screen and (max-width: 480px) {
-        //   min-height: 400px;
-        // }
 
         & .info-item {
           display: flex;
           flex-direction: column;
-          // align-items: center;
           margin: 0 0 24px;
 
           & .label {
             font-weight: 500;
             font-size: 16px;
             line-height: 28px;
-            // text-align: center;
             letter-spacing: 0.1em;
             text-transform: uppercase;
             color: $color--red-200;
@@ -490,18 +738,12 @@
             transition: opacity 0.3s;
             border-radius: 4px;
 
-            // @media screen and (max-width: 1024px) {
-            //   font-size: 26px;
-            // }
-
             @media screen and (max-width: 480px) {
               font-size: 24px;
             }
 
             &:hover {
-              // color: $color--red-500;
               color: $color--red-100;
-              // opacity: 0.9;
             }
 
             &:focus-within {
