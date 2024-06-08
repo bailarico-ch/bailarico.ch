@@ -172,9 +172,7 @@ const texts = {
           //
           `*CHF 25.-* für eine Einzelstunde.`,
           //
-          `*CHF 220.-* für eine 10er Abo-Karte. 
-          <br>
-          Abo-Karte gültig für alle Kurse!`,
+          `*CHF 220.-* für eine 10er Abo-Karte. Abo-Karte gültig für alle Kurse!`,
         ],
       },
     },
@@ -419,7 +417,7 @@ const texts = {
         title: 'Sign Up',
         text: [
           //
-          `Sign up for our classes by writing us a text message or email.`,
+          `Sign up for our classes by writing us a message or email.`,
         ],
       },
       // Pricing

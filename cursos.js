@@ -119,7 +119,7 @@ const courses = {
   friday: [
     {
       nameGerman: 'Umsteiger On1 ➞ On2',
-      nameEnglish: 'Swtitch On1 ➞ On2',
+      nameEnglish: 'Switch On1 ➞ On2',
       instructor: 'Victor',
       level: 2,
       time: '19:00',

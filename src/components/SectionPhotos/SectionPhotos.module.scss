@@ -1,12 +1,7 @@
 @import '@/styles/variables';
 
 .photos {
-  // padding: 80px 0;
   padding: 64px 0;
-
-  // @media screen and (max-width: 1024px) {
-  //   padding: 64px 0;
-  // }
 
   @media screen and (max-width: 767px) {
     padding: 48px 0;
@@ -14,7 +9,6 @@
 
   .images {
     width: 1200px;
-    // height: 800px;
     max-height: 800px;
     height: 80vh;
     margin: 0 auto;
@@ -51,12 +45,8 @@
     }
 
     @media screen and (max-width: 480px) {
-      // square
       height: 320px;
       margin: 48px auto;
-      // wide
-      // height: 300px;
-      // margin: 64px auto 56px;
     }
 
     @media screen and (max-width: 400px) {
@@ -86,7 +76,6 @@
       iframe {
         height: 100%;
         width: 100%;
-        // object-fit: cover;
       }
     }
   }

@@ -5,9 +5,9 @@
   padding: 64px 0 96px;
   background: $background--red;
 
-  // @media screen and (max-width: 1024px) {
-  //   padding: 64px 0;
-  // }
+  @media screen and (max-width: 1280px) {
+    padding: 48px 24px;
+  }
 
   @media screen and (max-width: 767px) {
     padding: 48px 0;
@@ -329,7 +329,9 @@
                     font-size: 16px;
                     line-height: 20px;
                     letter-spacing: 0.05em;
+                    text-transform: uppercase;
                     font-stretch: condensed;
+                    font-weight: 700;
 
                     @media screen and (max-width: 1200px) {
                       font-size: 15px;
@@ -396,6 +398,7 @@
                     letter-spacing: 0.02em;
                     text-transform: uppercase;
                     font-stretch: condensed;
+                    font-weight: 700;
 
                     @media screen and (max-width: 1200px) {
                       font-size: 16px;
@@ -616,15 +619,16 @@
       flex: none;
       display: flex;
       flex-direction: column;
-      margin: 0 64px 0;
+      width: 360px;
+      margin: 0 0 0 64px;
 
-      @media screen and (max-width: 1440px) {
-        margin: 0 20px 0 40px;
+      @media screen and (max-width: 1280px) {
+        margin: 0 0 0 48px;
       }
 
       @media screen and (max-width: 1024px) {
-        margin: 64px 0 0;
         width: min(800px, calc(100% - 40px));
+        margin: 64px 0 0;
       }
 
       @media screen and (max-width: 767px) {
@@ -640,25 +644,19 @@
 
         @media screen and (max-width: 1024px) {
           flex-direction: row;
+          gap: 40px;
           width: min(800px, calc(100% - 20px));
         }
 
         @media screen and (max-width: 767px) {
           flex-direction: column;
+          gap: 0;
           justify-content: flex-start;
         }
 
-        @media screen and (max-width: 480px) {
-          margin: 48px 0 0;
-        }
-
         & .detail {
-          width: min(360px, calc(100% - 20px));
+          width: 100%;
           margin: 0 0 40px;
-
-          @media screen and (max-width: 1024px) {
-            width: 100%;
-          }
 
           @media screen and (max-width: 480px) {
             width: min(360px, calc(100% - 20px));

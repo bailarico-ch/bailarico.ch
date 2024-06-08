@@ -1,25 +1,39 @@
-// Load fonts
-// @font-face {
-//   font-family: 'Helvetica Neue Condensed Bold';
-//   src: url('/fonts/HelveticaNeue-BoldCondensed.otf') format('opentype');
-//   font-weight: bold;
-//   font-style: normal;
-//   font-stretch: condensed;
-// }
+// Load fallback font
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('/fonts/RobotoCondensed-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: condensed;
+}
 
-// @font-face {
-//   font-family: 'Helvetica Neue';
-//   src: url('/fonts/HelveticaNeue.otf') format('opentype');
-//   font-weight: normal;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
 
-// @font-face {
-//   font-family: 'Helvetica Neue';
-//   src: url('/fonts/HelveticaNeue-Bold.otf') format('opentype');
-//   font-weight: bold;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
 
 //
 // Colors
@@ -61,21 +75,27 @@ $background--red: radial-gradient(
   radial-gradient(110.86% 195.37% at -5.08% 9.63%, #f5311b 0%, rgba(235, 13, 13, 0) 100%),
   radial-gradient(172.53% 149.92% at 104.11% 0%, #f5253a 0%, rgba(255, 0, 15, 0) 100%),
   linear-gradient(0deg, #b00a28, #b00a28), #ffffff;
-// $background--red: radial-gradient(
-//     91.92% 103.83% at 52.58% 7.93%,
-//     #cc0c17 0%,
-//     rgba(235, 13, 13, 0) 100%
-//   ),
-//   radial-gradient(110.86% 195.37% at -5.08% 9.63%, #ff4d15 0%, rgba(235, 13, 13, 0) 100%),
-//   radial-gradient(172.53% 149.92% at 104.11% 0%, #ff3d83 0%, rgba(255, 0, 15, 0) 100%),
-//   linear-gradient(0deg, #f43686, #f43686), #ffffff;
 
 //
 // Fonts
 //
 
-$font--main: 'Helvetica Neue', 'Helvetica', -apple-system, 'Arial', sans-serif;
-$font--condensed: 'HelveticaNeue-CondensedBold', 'HelveticaNeue-BoldCondensed',
-  'HelveticaNeueBoldCondensed', 'HelveticaNeueCondensedBold', 'HelveticaNeue-Bold-Condensed',
-  'HelveticaNeue-Condensed-Bold', 'Helvetica Neue Condensed Bold', 'Helvetica Neue Bold Condensed',
-  'Helvetica Neue', 'Helvetica', -apple-system, 'Arial', sans-serif;
+$font--main: 
+//
+  'Helvetica Neue', 'Helvetica',
+  //
+  'Roboto',
+  //
+  -apple-system,
+  'Arial', sans-serif;
+$font--condensed: 
+//
+  'HelveticaNeue-CondensedBold', 'HelveticaNeue-BoldCondensed', 'HelveticaNeueBoldCondensed',
+  'HelveticaNeueCondensedBold', 'HelveticaNeue-Bold-Condensed', 'HelveticaNeue-Condensed-Bold',
+  'Helvetica Neue Condensed Bold', 'Helvetica Neue Bold Condensed', 'Helvetica Neue', 'Helvetica',
+  //
+  'Roboto Condensed',
+  'RobotoCondensed', 'Roboto-Condensed',
+  //
+  -apple-system,
+  'Arial Narrow', 'ArialNarrow', 'Arial-Narrow', 'Arial', sans-serif;

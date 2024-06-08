@@ -1,13 +1,8 @@
 @import '@/styles/variables';
 
 .contact {
-  // padding: 80px 0;
   padding: 64px 0;
   background: $background--red;
-
-  // @media screen and (max-width: 1024px) {
-  //   padding: 64px 0;
-  // }
 
   @media screen and (max-width: 767px) {
     padding: 48px 0;
@@ -100,7 +95,6 @@
           right: 0;
           height: 80px;
           padding: 36px 20px 24px;
-          // padding: 36px 24px 24px;
           background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 
           @media screen and (max-width: 480px) {
@@ -113,7 +107,6 @@
             font-size: 20px;
             line-height: 20px;
             letter-spacing: 0.03em;
-            // letter-spacing: 0.04em;
             color: $color--light-100;
 
             @media screen and (max-width: 480px) {
@@ -140,10 +133,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        // width: min(700px, 100%);
         width: min(700px, calc(50% - 10px));
         margin: 0;
-        // background-color: red;
 
         & > * {
           margin: 20px 0;
@@ -202,7 +193,6 @@
             }
 
             &:hover {
-              // color: $color--red-500;
               color: $color--dark-500;
             }
 
@@ -275,7 +265,7 @@
           width: max-content;
 
           & span {
-            font-weight: 600;
+            font-weight: 500;
             font-size: 20px;
             line-height: 24px;
             letter-spacing: 0.02em;
@@ -302,8 +292,6 @@
 
           & img {
             filter: brightness(0.95);
-            // filter: contrast(95%);
-            // filter: grayscale(100%);
           }
         }
       }

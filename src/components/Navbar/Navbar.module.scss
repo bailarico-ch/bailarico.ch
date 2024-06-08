@@ -2,8 +2,6 @@
 
 .navbar {
   z-index: 1000;
-  // position: static;
-  // position: sticky;
   width: 100%;
   position: fixed;
   top: 0;
@@ -57,12 +55,8 @@
 
   &.background {
     padding: 4px 0 4px;
-
-    // background-color: $color--light-100;
     background-color: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(16px) saturate(160%);
-    // outline: 1px solid $color--light-100;
-    // box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08), 0 16px 32px rgba(0, 0, 0, 0.04);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04), 0 16px 48px rgba(0, 0, 0, 0.02);
 
     & .logo {
@@ -155,7 +149,7 @@
 
     & .menu__item {
       position: relative;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 20px;
       line-height: 24px;
       letter-spacing: 0.04em;
@@ -213,30 +207,6 @@
     }
 
     select {
-      // // all: initial;
-      // // position: relative;
-      // display: block;
-      // padding: 12px 26px;
-      // border-radius: 24px;
-      // -webkit-appearance: none;
-      // -moz-appearance: none;
-      // // // appearance: none;
-      // // // color: transparent;
-      // color: inherit;
-      // font: inherit;
-      // font-weight: 600;
-      // // // text-transform: none;
-      // font-family: $font--main;
-      // text-transform: uppercase;
-      // margin-left: 32px;
-      // letter-spacing: 0.04em;
-      // background-color: transparent;
-      // border: none;
-      // outline: transparent;
-      // overflow: hidden;
-      // width: fit-content;
-      // // pointer-events: none;
-
       display: block;
       padding: 12px 26px;
       border-radius: 24px;
@@ -255,19 +225,6 @@
       &:hover {
         cursor: pointer;
       }
-
-      // & option {
-      //   all: initial;
-      //   text-transform: none;
-      //   font-weight: normal;
-      //   display: block;
-      //   white-space: nowrap;
-      //   min-height: 1.2em;
-      //   padding: 0px 2px 1px;
-      //   font-size: 20px;
-      //   background-color: initial;
-      //   color: black;
-      // }
 
       &.german {
         width: calc(186px - 32px);
@@ -349,7 +306,7 @@
 
   & .menu__item {
     position: relative;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.04em;
