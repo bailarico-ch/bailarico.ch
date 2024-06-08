@@ -135,8 +135,8 @@ export const SectionCourses = ({ t, locale = 'de' }: SectionCoursesProps) => {
             {/* Footer */}
             <div className={`${styles['table__footer']}`}>
               <div className={`${styles['table__footer__left']}`}>
-                <span>{t.courses.table.footer.duration}</span>
-                <span>{t.courses.table.footer.durationTime}</span>
+                <div>{t.courses.table.footer.duration}</div>
+                <div>{t.courses.table.footer.durationTime}</div>
               </div>
               {/* Logo */}
               <div className={`${styles['table__footer__logo']}`}>
@@ -149,8 +149,8 @@ export const SectionCourses = ({ t, locale = 'de' }: SectionCoursesProps) => {
                 />
               </div>
               <div className={`${styles['table__footer__right']}`}>
-                <span>{t.contact.phoneNumber}</span>
-                <span>{t.contact.emailAddress}</span>
+                <div>{t.contact.phoneNumber}</div>
+                <div>{t.contact.emailAddress}</div>
               </div>
             </div>
           </div>

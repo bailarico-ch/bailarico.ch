@@ -1,7 +1,8 @@
 //
 // Cursos
 //
-// Los dias no pueden estar vacios, si no hay clases en un dia, se deben dejar los corchetes vacios.
+// ⚠️ Importante: Los dias ("monday", "tuesday", etc.) no pueden estar vacios!
+// Si no hay clases en un dia, se debe dejar el espacio entre los corchetes vacios.
 //
 const courses = {
   // Montag / Lunes
@@ -117,8 +118,8 @@ const courses = {
   // Freitag / Viernes
   friday: [
     {
-      nameGerman: 'Umsteiger On1 → On2',
-      nameEnglish: 'Swtitch On1 → On2',
+      nameGerman: 'Umsteiger On1 ➞ On2',
+      nameEnglish: 'Swtitch On1 ➞ On2',
       instructor: 'Victor',
       level: 2,
       time: '19:00',
