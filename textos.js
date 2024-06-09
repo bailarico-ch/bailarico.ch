@@ -162,7 +162,7 @@ const texts = {
         title: 'Anmeldung',
         text: [
           //
-          `Schreib uns eine Nachricht um dich anzumelden.`,
+          `Schreib uns eine Nachricht um dich anzumelden:`,
         ],
       },
       // Preise
@@ -172,7 +172,7 @@ const texts = {
           //
           `*CHF 25.-* für eine Einzelstunde.`,
           //
-          `*CHF 220.-* für eine 10er Abo-Karte. Abo-Karte gültig für alle Kurse!`,
+          `*CHF 220.-* für eine 10er Abo-Karte. Abo-Karten sind gültig für alle Kurse!`,
         ],
       },
     },
@@ -417,7 +417,7 @@ const texts = {
         title: 'Sign Up',
         text: [
           //
-          `Sign up for our classes by writing us a message or email.`,
+          `Write us a message, or send us an email:`,
         ],
       },
       // Pricing
@@ -426,7 +426,7 @@ const texts = {
         text: [
           //
           `*CHF 25.-* for a single lesson.`,
-          `*CHF 220.-* for a 10-lesson Member Card. The Member Card is valid for all our classes!`,
+          `*CHF 220.-* for a 10-lesson Member Card. Member Cards are valid for all our classes!`,
         ],
       },
     },
