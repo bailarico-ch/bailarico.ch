@@ -1,4 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, {
+  useEffect,
+  useRef,
+  // useState
+} from 'react'
 import type { NextPage } from 'next'
 import { motion } from 'framer-motion'
 
@@ -33,7 +37,7 @@ const Home: NextPage = () => {
 
   const words = t.hero.title.middle.length > 0 ? t.hero.title.middle : ['Salsa']
   // Before hydration, don't play the video
-  const [shouldPlay, setShouldPlay] = useState(false)
+  // const [shouldPlay, setShouldPlay] = useState(false)
 
   // const [isFail, setIsFail] = useState(false)
 
@@ -79,10 +83,10 @@ const Home: NextPage = () => {
     }, 400)
   }, [])
 
-  useEffect(() => {
-    // After hydration, play the video
-    setShouldPlay(true)
-  }, [])
+  // useEffect(() => {
+  //   // After hydration, play the video
+  //   setShouldPlay(true)
+  // }, [])
 
   // useEffect(() => {
   //   // videoRef.current.play()
@@ -162,7 +166,8 @@ const Home: NextPage = () => {
                 <motion.div initial="hidden" animate="visible" variants={videoAnimation}>
                   <video
                     ref={videoRef}
-                    autoPlay={shouldPlay}
+                    autoPlay
+                    // autoPlay={shouldPlay}
                     width="1440"
                     height="720"
                     loop
