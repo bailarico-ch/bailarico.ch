@@ -89,7 +89,7 @@ const courses = {
     {
       nameGerman: 'Salsa Anfänger',
       nameEnglish: 'Salsa Beginners',
-      instructor: 'Husain',
+      instructor: 'David',
       level: 1,
       time: '18:15',
     },
@@ -118,8 +118,8 @@ const courses = {
   // Freitag / Viernes
   friday: [
     {
-      nameGerman: 'Umsteiger On1 ➞ On2',
-      nameEnglish: 'Switch On1 ➞ On2',
+      nameGerman: 'Umsteiger On1➞On2',
+      nameEnglish: 'Switch On1➞On2',
       instructor: 'Victor',
       level: 2,
       time: '19:00',
