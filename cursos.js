@@ -25,10 +25,10 @@ const courses = {
   // Dienstag / Martes
   tuesday: [
     {
-      nameGerman: 'Salsa Einsteiger',
-      nameEnglish: 'Salsa Newcomers',
+      nameGerman: 'Salsa Anfänger',
+      nameEnglish: 'Salsa Beginners',
       instructor: 'David',
-      level: 0,
+      level: 1,
       time: '18:15',
     },
     {
@@ -87,13 +87,6 @@ const courses = {
   // Donnerstag / Jueves
   thursday: [
     {
-      nameGerman: 'Salsa Anfänger',
-      nameEnglish: 'Salsa Beginners',
-      instructor: 'David',
-      level: 1,
-      time: '18:15',
-    },
-    {
       nameGerman: 'Cha Cha Cha',
       nameEnglish: 'Cha Cha Cha',
       instructor: 'Victor',
@@ -101,10 +94,10 @@ const courses = {
       time: '19:30',
     },
     {
-      nameGerman: 'Salsa Einsteiger',
-      nameEnglish: 'Salsa Newcomers',
+      nameGerman: 'Salsa Anfänger',
+      nameEnglish: 'Salsa Beginners',
       instructor: 'David',
-      level: 0,
+      level: 1,
       time: '19:30',
     },
     {

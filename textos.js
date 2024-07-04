@@ -381,7 +381,7 @@ const texts = {
       table: {
         header: {
           title: 'Schedule',
-          subtitle: 'From 1. July 2024',
+          subtitle: 'From July 1, 2024',
         },
         levels: {
           level0: 'Newcomer',
