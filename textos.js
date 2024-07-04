@@ -126,7 +126,7 @@ const texts = {
       table: {
         header: {
           title: 'Kursplan',
-          subtitle: 'Ab 1. Juni 2024',
+          subtitle: 'Ab 1. Juli 2024',
         },
         levels: {
           level0: 'Einsteiger',
@@ -381,7 +381,7 @@ const texts = {
       table: {
         header: {
           title: 'Schedule',
-          subtitle: 'From 1. June 2024',
+          subtitle: 'From 1. July 2024',
         },
         levels: {
           level0: 'Newcomer',
