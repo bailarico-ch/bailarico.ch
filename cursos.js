@@ -115,7 +115,7 @@ const courses = {
       nameEnglish: 'Switch On1➞On2',
       instructor: 'Victor',
       level: 2,
-      time: '19:00',
+      time: '19:30',
     },
     // {
     //   nameGerman: 'On2 Ladies Style',
