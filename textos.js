@@ -126,7 +126,7 @@ const texts = {
       table: {
         header: {
           title: 'Kursplan',
-          subtitle: 'Ab 1. Juli 2024',
+          subtitle: 'Ab 5. Januar 2026',
         },
         levels: {
           level0: 'Einsteiger',
@@ -170,9 +170,11 @@ const texts = {
         title: 'Preise',
         text: [
           //
-          `*CHF 25.-* für eine Einzelstunde.`,
+          `*CHF 35.-* für eine Einzelstunde.`,
           //
-          `*CHF 220.-* für eine 10er Abo-Karte. Abo-Karten sind gültig für alle Kurse!`,
+          `*CHF 250.-* für eine 10er Abo-Karte.<br>Abo-Karten sind gültig für alle Kurse!`,
+          //
+          `*CHF 360.-* für ein Monatsabo.<br>Zugang zu allen unseren Kursen!`,
         ],
       },
     },
@@ -224,14 +226,14 @@ const texts = {
             // `...`,
           ],
         },
-        {
-          name: 'Muriel Lowis',
-          job: 'Salsa, Bachata',
-          summary: [
-            //
-            // `...`,
-          ],
-        },
+        // {
+        //   name: 'Muriel Lowis',
+        //   job: 'Salsa, Bachata',
+        //   summary: [
+        //     //
+        //     // `...`,
+        //   ],
+        // },
         // {
         //   name: '???? ????',
         //   job: 'Salsa, ????',
@@ -381,7 +383,7 @@ const texts = {
       table: {
         header: {
           title: 'Schedule',
-          subtitle: 'From July 1, 2024',
+          subtitle: 'From January 5, 2026',
         },
         levels: {
           level0: 'Newcomer',
@@ -425,8 +427,9 @@ const texts = {
         title: 'Pricing',
         text: [
           //
-          `*CHF 25.-* for a single lesson.`,
-          `*CHF 220.-* for a 10-lesson Member Card. Member Cards are valid for all our classes!`,
+          `*CHF 35.-* for a single lesson.`,
+          `*CHF 250.-* for a 10-lesson Member Card.<br>Member Cards are valid for any of our lessons!`,
+          `*CHF 360.-* for a Monthly Membership.<br>Access to all our lessons!`,
         ],
       },
     },
@@ -478,14 +481,14 @@ const texts = {
             // `...`,
           ],
         },
-        {
-          name: 'Muriel Lowis',
-          job: 'Salsa, Bachata',
-          summary: [
-            //
-            // `...`,
-          ],
-        },
+        // {
+        //   name: 'Muriel Lowis',
+        //   job: 'Salsa, Bachata',
+        //   summary: [
+        //     //
+        //     // `...`,
+        //   ],
+        // },
         // {
         //   name: '???? ????',
         //   job: '????',
