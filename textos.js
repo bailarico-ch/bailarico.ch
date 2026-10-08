@@ -172,7 +172,7 @@ const texts = {
           //
           `*CHF 35.-* für eine Einzelstunde.`,
           //
-          `*CHF 250.-* für eine 10er Abo-Karte.<br>Abo-Karten sind gültig für alle Kurse!`,
+          `*CHF 250.-* für eine 10er Abo-Karte.<br>10er Abo ist 1 Jahr gültig. Abo-Karten sind gültig für alle Kurse!`,
           //
           `*CHF 360.-* für ein Monatsabo.<br>Zugang zu allen unseren Kursen!`,
         ],
@@ -428,7 +428,7 @@ const texts = {
         text: [
           //
           `*CHF 35.-* for a single lesson.`,
-          `*CHF 250.-* for a 10-lesson Member Card.<br>Member Cards are valid for any of our lessons!`,
+          `*CHF 250.-* for a 10-lesson Member Card.<br>Member Cards are valid for 1 year for any of our lessons!`,
           `*CHF 360.-* for a Monthly Membership.<br>Access to all our lessons!`,
         ],
       },
